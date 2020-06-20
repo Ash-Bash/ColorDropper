@@ -15,6 +15,8 @@
 		123AE33B249D911100A10B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123AE339249D911100A10B12 /* LaunchScreen.storyboard */; };
 		123AE346249D911100A10B12 /* ColorDropperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AE345249D911100A10B12 /* ColorDropperTests.swift */; };
 		123AE351249D911100A10B12 /* ColorDropperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AE350249D911100A10B12 /* ColorDropperUITests.swift */; };
+		123AE35F249D914300A10B12 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AE35E249D914300A10B12 /* View.swift */; };
+		123AE361249D916800A10B12 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123AE360249D916800A10B12 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		123AE34C249D911100A10B12 /* ColorDropperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorDropperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123AE350249D911100A10B12 /* ColorDropperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDropperUITests.swift; sourceTree = "<group>"; };
 		123AE352249D911100A10B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123AE35E249D914300A10B12 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		123AE360249D916800A10B12 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		123AE362249D928500A10B12 /* ColorDropper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorDropper.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +104,9 @@
 		123AE32D249D910F00A10B12 /* ColorDropper */ = {
 			isa = PBXGroup;
 			children = (
+				123AE362249D928500A10B12 /* ColorDropper.entitlements */,
+				123AE35E249D914300A10B12 /* View.swift */,
+				123AE360249D916800A10B12 /* UIColor.swift */,
 				123AE32E249D910F00A10B12 /* AppDelegate.swift */,
 				123AE330249D910F00A10B12 /* SceneDelegate.swift */,
 				123AE332249D910F00A10B12 /* ContentView.swift */,
@@ -267,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123AE35F249D914300A10B12 /* View.swift in Sources */,
 				123AE32F249D910F00A10B12 /* AppDelegate.swift in Sources */,
 				123AE331249D910F00A10B12 /* SceneDelegate.swift in Sources */,
 				123AE333249D910F00A10B12 /* ContentView.swift in Sources */,
+				123AE361249D916800A10B12 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColorDropper/ColorDropper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorDropper/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Z7S2893K;
@@ -443,8 +454,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashleychapman.ColorDropper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashbash.ColorDropper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ColorDropper/ColorDropper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorDropper/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Z7S2893K;
@@ -463,8 +476,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ashleychapman.ColorDropper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashbash.ColorDropper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
